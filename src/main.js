@@ -12,6 +12,7 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
+    icon: path.join(__dirname, '../../assets/perfume.ico'),
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
     },
@@ -26,6 +27,7 @@ const createWindow = () => {
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools();
+  // mainWindow.removeMenu();
 };
 
 // This method will be called when Electron has finished

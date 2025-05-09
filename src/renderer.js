@@ -28,4 +28,15 @@
 
 import './index.css';
 
+const title = document.getElementById('title');
+
+title.addEventListener('click', () => {
+    // toggle text
+    if (title.innerText === 'Aos poucos você vai entendendo') {
+        title.innerText = '💖 Hello World!';
+        return;
+    }
+    title.innerText = 'Aos poucos você vai entendendo';
+});
+
 console.log('👋 This message is being logged by "renderer.js", included via Vite');
