@@ -2,13 +2,15 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'"/>
+    <script type="module" src="/src/renderer.js"></script>
+    <link rel="stylesheet" href="../index.css">
     <title>Boticário - Home Page</title>
 
   </head>
   <body>
-    <h1 id="title">💖 Hello World!</h1>
+    <h1 id="title">Hello World!</h1>
     <p>Welcome to your Electron application.</p>
-    <button class="btn">Ir para Produtos</button>
-    <script type="module" src="/src/renderer.js"></script>
+    <a href="./src/pages/test.html"><button class="btn">Ir para Produtos</button></a>
   </body>
 </html>

@@ -39,4 +39,3 @@ title.addEventListener('click', () => {
     title.innerText = 'Aos poucos você vai entendendo';
 });
 
-console.log('👋 This message is being logged by "renderer.js", included via Vite');
