@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self'"/>
-    <script type="module" src="/src/renderer.js"></script>
-    <link rel="stylesheet" href="../index.css">
-    <title>Boticário - Home Page</title>
 
-  </head>
-  <body>
-    <h1 id="title">Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
-    <a href="./src/pages/test.html"><button class="btn">Ir para Produtos</button></a>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self'" />
+  <script type="module" src="./src/renderer.js"></script>
+  <link rel="stylesheet" href="./src/index.css">
+  <title>Boticário</title>
+</head>
+
+<body>
+  <div id="page1" class="page1 shwon">
+    <img class="left" src="./assets/perfume.png" alt="">
+    <h1 id="title">Login</h1>
+    <form id="login-form" class="form shown">
+      <label for="nickname">Nickname:</label>
+      <input type="text" id="nickname" name="nickname" required />
+      <br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+      <br />
+      <button id="login-btn" class="btn">Login</button>
+    </form>
+    <img class="right" src="./assets/perfume.png" alt="">
+  </div>
+
+  <div id="page2" class="page2 hidden">
+    <h1 id="test">Test</h1>
+    <h1>Renderização Manipulada com sucesso!!</h1>
+    <button id="logout-btn" class="btn">Logout</button>
+    <!-- <a href="./src/pages/test.html"><button id="voltar" class="btn">Voltar</button></a> -->
+     <button id="voltar" class="btn">Voltar</button>
+  </div>
+
+</body>
+
 </html>
